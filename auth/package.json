@@ -9,7 +9,7 @@
     "prettier:fix": "prettier --write ./src/**/*.ts",
     "start:dev": "nodemon src/index.ts",
     "start": "",
-    "test": "jest",
+    "test": "jest --watchAll --no-cache",
     "prepare": "husky"
   },
   "jest": {
@@ -20,10 +20,12 @@
   "author": "Gospel Amanze",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.29.1",
     "express": "^4.19.2",
+    "express-validator": "^7.1.0",
     "nodemon": "^3.1.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
