@@ -7,7 +7,8 @@ module.exports = {
   ignorePatterns: ['dist', '.eslintrc.js'],
   plugins: ['import', 'prettier', '@typescript-eslint'],
   parserOptions: {
-    project: './tsconfig.json',
+    project: '../tsconfig.json',
+    tsconfigRootDir: __dirname,
   },
   rules: {
     quotes: [
