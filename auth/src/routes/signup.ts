@@ -3,8 +3,6 @@ import { body, validationResult } from 'express-validator';
 
 const signupRouter = express.Router();
 
-const test = `test`;
-
 signupRouter.post(
   '/api/auth/signup',
   [body('email').isEmail().withMessage('Email must be in a valid format')],
